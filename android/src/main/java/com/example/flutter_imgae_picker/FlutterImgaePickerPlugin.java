@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.util.Log;
 
 import com.lcw.library.imagepicker.ImagePicker;
-import com.lcw.library.imagepicker.utils.ImageLoader;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
@@ -24,7 +23,7 @@ import io.flutter.plugin.common.PluginRegistry.Registrar;
 /** FlutterImgaePickerPlugin */
 public class FlutterImgaePickerPlugin implements FlutterPlugin, MethodCallHandler, ActivityAware {
 
-  private static Result result1;
+  private static MethodChannel.Result result1;
   private MethodChannel channel;
   private Application mApplication;
   private WeakReference<Activity> mActivity;
